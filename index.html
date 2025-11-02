@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP WiFi Onboarding Fix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Republic Polytechnic WiFi Setup</h1>
+            <p class="subtitle">Quick Fix Guide</p>
+        </header>
+
+        <main>
+            <div class="steps">
+                <div class="step" id="step1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h2>Set DNS to Automatic</h2>
+                        <div class="instructions">
+                            <h3>Windows:</h3>
+                            <ol>
+                                <li>Open <strong>Settings</strong> → <strong>Network & Internet</strong></li>
+                                <li>Click <strong>Wi-Fi</strong> → Select your network</li>
+                                <li>Click <strong>Edit</strong> under IP settings</li>
+                                <li>Find <strong>DNS settings</strong> and change to <strong>Automatic</strong></li>
+                                <li>Click <strong>Save</strong></li>
+                            </ol>
+                            <h3>Mac:</h3>
+                            <ol>
+                                <li>Open <strong>System Preferences</strong> → <strong>Network</strong></li>
+                                <li>Select <strong>Wi-Fi</strong> → Click <strong>Advanced</strong></li>
+                                <li>Go to <strong>DNS</strong> tab</li>
+                                <li>Remove any custom DNS servers</li>
+                                <li>Click <strong>OK</strong> and <strong>Apply</strong></li>
+                            </ol>
+                        </div>
+                        <button class="btn" onclick="checkStep(1)">I've Done This</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h2>Connect to POLITE-MALL</h2>
+                        <div class="instructions">
+                            <ol>
+                                <li>Open your WiFi settings</li>
+                                <li>Look for the network named <strong class="network-name">POLITE-MALL</strong></li>
+                                <li>Connect to it (no password required)</li>
+                                <li>Wait for connection to establish</li>
+                            </ol>
+                        </div>
+                        <button class="btn" onclick="checkStep(2)">I'm Connected</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h2>Test Your Connection</h2>
+                        <div class="instructions">
+                            <p>Your WiFi should now be working! Try accessing:</p>
+                            <ul>
+                                <li>Any website in your browser</li>
+                                <li>Online services</li>
+                            </ul>
+                        </div>
+                        <button class="btn test-btn" onclick="testConnection()">Test Connection</button>
+                        <div id="test-result" class="test-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-section">
+                <h2>Still Having Issues?</h2>
+                <ul>
+                    <li>Make sure you've disconnected from other WiFi networks</li>
+                    <li>Restart your device if the connection doesn't work</li>
+                    <li>Forget the POLITE-MALL network and reconnect</li>
+                    <li>Contact IT Support if problems persist</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>vibe coded with cursor</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
