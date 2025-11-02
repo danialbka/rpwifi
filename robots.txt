@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (if you add one later)
+# Sitemap: https://danialbka.github.io/rpwifi/sitemap.xml
+
